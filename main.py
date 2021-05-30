@@ -30,7 +30,7 @@ def get_angle(n):
 
 
 def animation(size, rounds=10):
-    """Star animation"""
+    """Star rotation animation"""
     for i in range(rounds):
         to.setheading(get_angle(i))  # tilt to an certain degree to the left each time
         # Draw star
@@ -41,5 +41,5 @@ def animation(size, rounds=10):
         to.end_fill()
 
 
-animation(200)
+animation(100, 5)
 my_screen.exitonclick()
