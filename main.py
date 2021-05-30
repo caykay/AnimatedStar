@@ -29,17 +29,17 @@ def get_angle(n):
     return n % 360 if n > 360 else (n * 180) / PI
 
 
-def animation(n):
+def animation(size, rounds=10):
     """Star animation"""
-    for i in range(n):
-        to.setheading(get_angle(i))  # tilt to an equal degree to the left each time
+    for i in range(rounds):
+        to.setheading(get_angle(i))  # tilt to an certain degree to the left each time
         # Draw star
         to.color(random_color())
         to.begin_fill()
 
-        draw_star(((n - i) * 150) / n - 10 * i)
+        draw_star(size - (size*i)//rounds)
         to.end_fill()
 
 
-animation(50)
+animation(200)
 my_screen.exitonclick()
