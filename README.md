@@ -23,5 +23,16 @@ from main import animation
 animation(400)
 ```
 
+## Changing the number of rounds
+You can alter the number of times the star is animated
+by including another argument called rounds by default _rounds = 10_
+```python
+# Example
+from main import animation
+animation(size=400, rounds=20)
+```
 
 ## Animation example
+| At start      | At end      |
+|------------|-------------|
+|![Start image](images/start.png)|![End image](images/end.png)|
